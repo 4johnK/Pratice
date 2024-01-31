@@ -26,7 +26,7 @@ class FifaScrapper(scrapy.Spider):
         else:
             if response.xpath("//nav/ul//li/a/text()").extract()[0] == "Next Page":
                 navigation_element = 0
-
+asdwewe
         if response.xpath("//nav/ul//li/a/text()").extract()[0] == "Previous Page" and length < 2:
             print("SCRAPY REACHED THE END")
         else:
